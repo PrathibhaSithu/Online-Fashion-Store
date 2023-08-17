@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600,700,800,900&display=swap');
+*{
+	margin : 0;
+	padding : 0;
+	box-sizing : border-box;
+	font-family : 'poppins', sans-serif;
+}
+body{
+	overflow : hidden;
+}
+section{
+	display : flex;
+	justify-content : center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(to bottom, #0066ff,#cc66ff);
+}
+section .color{
+	position : absolute;
+	filter: blur(200px);
+}
+section .color:nth-child(1){
+	top: -350px;
+	width: 600px;
+	height : 600px;
+	background : #00ffcc;
+}
+section .color:nth-child(2){
+	bottom: -150px;
+	left: 100px;
+	width: 500px;
+	height : 500px;
+	background : #cc66ff;
+}
+section .color:nth-child(3){
+	bottom: 50px;
+	left: 100px;
+	width: 300px;
+	height : 300px;
+	background : #00d2ff;
+}
+.box{
+	position: relative;
+}
+.box .square{
+	position : absolute;
+	backdrop-filter: blur(5px);
+	box-shadow: 0 30px 50px rgba(0,0,0,0.1);
+	border: 1px solid rgba(255,255,255,0.2);
+	border-right: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	background: rgba(255,255,255,0.1);
+	border-radius: 20px;
+	animation: animate 10s linear infinite;
+	animation-delay: calc(-1s * var(--i));
+}
+@keyframes animate {
+	0%,100%{
+		transform: translateY(-40px);
+	}
+	50%{
+		transform: translateY(40px);
+	}
+}
+.box .square:nth-child(1){
+	top: -50px;
+	right: -60px;
+	width: 100px;
+	height : 100px;
+}
+.box .square:nth-child(2){
+	top: 200px;
+	left: -100px;
+	width: 120px;
+	height : 100px;
+	z-index: 2;
+}
+.box .square:nth-child(3){
+	bottom: 50px;
+	right: -60px;
+	width: 80px;
+	height : 80px;
+	z-index: 2;
+}
+.box .square:nth-child(4){
+	bottom: -80px;
+	right: 180px;
+	width: 50px;
+	height : 50px;
+}
+.box .square:nth-child(5){
+	top: -80px;
+	left: -10px;
+	width: 60px;
+	height : 60px;
+}
+.box .square:nth-child(6){
+	top: 20px;
+	left: -200px;
+	width: 90px;
+	height : 90px;
+}
+.box .square:nth-child(7){
+	top: 80px;
+	left: -500px;
+	width: 60px;
+	height : 60px;
+}
+.box .square:nth-child(8){
+	bottom: 80px;
+	left: -300px;
+	width: 80px;
+	height : 80px;
+}
+.box .square:nth-child(9){
+	top: 10px;
+	right: -300px;
+	width: 90px;
+	height : 90px;
+}
+.box .square:nth-child(10){
+	bottom: 50px;
+	right: -500px;
+	width: 90px;
+	height : 100px;
+}
+.container{
+	position: relative;
+	width: 400px;
+	min-height: 400px;
+	background: rgba(255,255,255,0.1);
+	border-radius : 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(5px);
+	box-shadow: 0 25px 45px rgba(0,0,0,0.8);
+	border: 1px solid rgba(255,255,255,0.2);
+	border-right: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.form{
+	position: relative;
+	width: 100%;
+	height : 100%;
+	padding: 40px;
+}
+.form h2{
+	position: relative;
+	color: #990099;
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+.form h2::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	width: 150px;
+	height: 4px;
+	background: #990099;
+}
+.form h3{
+	position: relative;
+	color: #000066;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 0px;
+	margin-bottom: 10px;
+}
+.form .inputBox{
+	width: 100%;
+	margin-top: 20px;
+}
+.form .inputBox input{
+	width: 100%;
+	background : rgba(255,255,255,0.2);
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 35px;
+	border: 1px solid rgba(255,255,255,0.5);
+	border-right: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	font-size: 16px;
+	letter-spacing:1px;
+	color: #fff;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.form.inputBox input::placeholder{
+	color: #ff99cc;
+}
+.form .inputBox input[type="submit"]{
+	background: #ff99cc;
+	color: #222;
+	max-width: 150px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.Register{
+	margin-top: 5px;
+	color: #110866;
+}
+.Register a{
+	color: #ef4dbd;
+	font-weight: 600;
+}
+.Register form .error-msg{
+	margin : 10px 0;
+	display : block;
+	background: #b366ff;
+	color : #000;
+	border-radius : 5px;
+	font-size : 20px;
+	padding : 10px;
+}

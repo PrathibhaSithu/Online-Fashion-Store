@@ -1,0 +1,117 @@
+body{
+    
+    margin: 0;
+    padding :0;
+    font-family: monospace;
+    background: linear-gradient(120deg,#2980b9,#8e44ad);
+    height: 100vh;
+    overflow:scroll;
+}
+
+.container{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width:500px;
+  background: url(../image/Background.jpg);
+  border-radius: 5%;
+  margin-top:85px;
+}
+
+.container h1{
+  font-size: 20px;  
+  text-align: center;
+  padding: 20px;
+  border-bottom: 4px solid silver;
+  
+}
+
+.container form{
+  padding: 0 15%;
+  box-sizing: border-box;
+  padding-top: 20px;
+  margin-bottom: 20px;
+    
+}  
+
+.update_data{
+
+  margin-top:10px;
+  border:none;
+  border: 1px solid silver;
+  border-radius: 7px;
+  width: 250px;
+  margin-bottom: 10px;
+  height: 30px;
+
+}
+
+.butt{
+
+    float:right;
+    /* margin-right: 50px; */
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+    background: linear-gradient(120deg,#2980b9,#8e44ad);
+    border-radius: 6px;
+    padding:2px;
+    border: none;
+    width: 20%;
+    height: 35px;
+    margin-bottom: 10px;
+    
+}
+
+.butt:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.butt:active {
+  box-shadow: 0 5px rgb(0, 47, 255);
+  transform: translateY(4px);
+}
+
+.email{
+  
+    width: 50%;
+    height: 40px;
+    font-size: 16px;
+    border:none;
+    border-radius: 7px;
+    border: 2px solid silver;
+    margin-top: 2px;
+    color:black;
+}
+
+
+
+.delete_btn
+{
+  float:left;
+  margin:15px;
+}
+
+.delet_btnin
+{
+
+  transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+  background: linear-gradient(120deg,#2980b9,#8e44ad);
+  border-radius: 6px;
+  padding:2px;
+  border: none;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+
+}
+
+.delet_btnin:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.delet_btnin:active {
+  box-shadow: 0 5px rgb(0, 47, 255);
+  transform: translateY(4px);
+}

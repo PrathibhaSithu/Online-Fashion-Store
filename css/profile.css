@@ -1,0 +1,46 @@
+body{
+    
+    margin: 0;
+    padding :0;
+    background: url('./image/bac2.png');
+    background-size:100% ;
+    overflow:hidden;
+
+}
+.container{
+    /* position:absolute; */
+     top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:400px;
+    background: white;
+    border-radius: 5%;
+    margin-top:100%;
+
+  }
+  
+  .container h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 4px solid silver;
+    margin-top: 30px;
+  }
+
+  .container h2{
+    text-align: left;
+    padding: 0 0 10px 0;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom:10px;
+  } 
+  
+ div{
+   margin-left: 40px;
+  
+ }
+
+ td
+ {
+   padding-left: 40px;
+   padding:20px;
+ }

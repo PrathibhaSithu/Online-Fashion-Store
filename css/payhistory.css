@@ -1,0 +1,42 @@
+body{
+    background: url(../image/pay_his.jpeg) no-repeat center fixed;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+}
+.table{
+    align-items: center;
+    padding: 10%;
+}
+
+table{
+    width: 100%;
+    margin: auto;
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 26px;
+    table-layout: fixed;
+    background: blue;
+    opacity: 0.8;
+    color: #fff;
+    
+}
+
+.delete{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+
+}
+
